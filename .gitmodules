@@ -1,0 +1,3 @@
+[submodule "KANJI-client"]
+	path = KANJI-client
+	url = git@github.com:youriko-fanclub/KANJI-client.git
