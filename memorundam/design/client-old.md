@@ -128,5 +128,9 @@ package ui {
 
 }
 
+class CharacterSelection {
+
+}
+
 @enduml
 ```
