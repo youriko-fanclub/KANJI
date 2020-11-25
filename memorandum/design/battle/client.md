@@ -103,28 +103,3 @@ BattlePlayer o-- IParameterizedCharacter
 
 @enduml
 ```
-
-- 要件
-    - 引数は解析前の情報を受取る
-        - 将来的に、文字列解析/数値to文字列/ストリーム出力 のコストを外部に逃がすため
-        - バイナリデータ、TCP通信
-    - 送信前提の蓄積方法
-        - ダブルバッファリング
-    - 大規模ログの受容と活用
-        - 圧縮
-        - グラフ化
-        - ビューワ
-
-出力class を差し替えて内部出力/外部出力を切り替える
-Error/Info/Debug
-
-~~~cpp
-void main() {
-dx::dbg::Log(const s3d::String& );
-LogInfo() / LogDebug() / LogError()
-category_name, body, args...
-args... = key_string, value
-Extract / Transform / Load
-[Layer.Layer2.Layer3]
-}
-~~~
